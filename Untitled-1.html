@@ -1,0 +1,93 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home - Keyclass</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<link rel="stylesheet" href="\Users\solyo\Documents\keyclass.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+<div class="container">
+<a href="/" class="navbar-brand">
+<span class="navbar-brand mb-0 h1">Keystone</span>
+</a>
+<button class="navbar-toggler" role="button" data-toggle="collapse" data-target="#navigation-bar">
+<i class="fas fa-bars"></i>
+</button>
+<div class="collapse navbar-collapse" id="navigation-bar">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a href="/" class="nav-link active">
+<i class="fas fa-home"></i>
+<span>Home</span>
+</a>
+</li>
+<li class="nav-item">
+<a href="/apply" class="nav-link ">
+<i class="fas fa-briefcase"></i>
+<span>Apply</span>
+</a>
+</li>
+<li class="nav-item">
+<a href="https://discord.gg/keystone" class="nav-link ">
+<i class="fas fa-phone"></i>
+<span>Contact Us</span>
+</a>
+</li>
+<li class="nav-item pl-2 pt-1 d-lg-block d-none">
+<button class="btn btn-sm btn-outline-success" data-target="#status-modal" data-toggle="modal">Check Application Status</button>
+</li>
+<li class="nav-item d-lg-none">
+<a class="nav-link" data-target="#status-modal" data-toggle="modal">
+<i class="fas fa-pencil"></i>
+<span>Check Application</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="page-content container">
+</div>
+<div class="modal" id="status-modal">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">Application Status</h5>
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body">
+<div class="text-center" id="status-response" style="display:none;">
+<div class="font-weight-bold mb-2"></div>
+<h3></h3>
+<p></p>
+</div>
+<form id="status-form">
+<div class="input-group">
+<input class="form-control" placeholder="Application ID" name="id" type="text" required>
+<div class="input-group-append">
+<button class="btn btn-primary" type="submit">
+<i class="fas fa-arrow-right mr-0"></i>
+</button>
+</div>
+</div>
+</form>
+<div class="text-danger mt-2" id="status-error" style="display:none;"></div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<script src="/static/js/jquery.min.js?v=17172"></script>
+<script src="/static/js/bootstrap.bundle.min.js?v=17172"></script>
+<script src="/static/js/track.js?v=17172"></script>
+</body>
+</html>
